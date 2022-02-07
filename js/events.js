@@ -1,3 +1,4 @@
+// using function name  (it will be used most of the cases)
 function makeRed() {
     document.body.style.backgroundColor = 'red';
 }
@@ -40,7 +41,7 @@ hotPinkButton.addEventListener('click', function () {
 })
 
 //================================================================================
-// direct shortcut
+// direct shortcut (it will be used most of the cases)
 
 document.getElementById('make-light-blue').addEventListener('click', function () {
     document.body.style.backgroundColor = 'lightblue';
