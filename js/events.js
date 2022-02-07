@@ -30,3 +30,18 @@ goldenButton.addEventListener('click', makeGoldenRod)
 function makeGoldenRod() {
     document.body.style.backgroundColor = 'goldenrod';
 }
+
+//================================================================
+
+// addEventListener
+const hotPinkButton = document.getElementById('make-hot-pink');
+hotPinkButton.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'hotpink';
+})
+
+//================================================================================
+// direct shortcut
+
+document.getElementById('make-light-blue').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'lightblue';
+})
