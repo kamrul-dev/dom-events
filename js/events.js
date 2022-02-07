@@ -22,3 +22,11 @@ greenButton.onclick = function () {
 }
 
 //===================================================================
+
+// handle by using addEventListener
+const goldenButton = document.getElementById('make-golden-rod');
+goldenButton.addEventListener('click', makeGoldenRod)
+
+function makeGoldenRod() {
+    document.body.style.backgroundColor = 'goldenrod';
+}
