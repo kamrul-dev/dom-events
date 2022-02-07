@@ -7,6 +7,18 @@ function makeRed() {
 const blueButton = document.getElementById('make-blue-button');
 blueButton.onclick = makeBlue;
 
-function makeBlue(){
+function makeBlue() {
     document.body.style.backgroundColor = 'blue';
 }
+
+//===================================================================
+
+// handle event using anonymous function
+const greenButton = document.getElementById('make-green-button');
+
+// anonymous fuction
+greenButton.onclick = function () {
+    document.body.style.backgroundColor = 'green';
+}
+
+//===================================================================
