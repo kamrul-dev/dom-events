@@ -55,3 +55,9 @@ document.getElementById('input-field').addEventListener('focus', function(){
 document.getElementById('input-field').addEventListener('blur', function(){
     document.body.style.backgroundColor = 'white';
 })
+
+//apply 'keydown' event using addEventListener in input field
+document.getElementById('input-field').addEventListener('keydown', function(){
+    const inputField = document.getElementById('input-field');
+    console.log(inputField.value);
+})
