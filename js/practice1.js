@@ -46,7 +46,12 @@ document.getElementById('delete-btn').addEventListener('click', function(){
     document.getElementById('secret-info').style.display = 'none';
 })
 
-// apply focus event using addEventListener in input field;
+// apply 'focus' event using addEventListener in input field;
 document.getElementById('input-field').addEventListener('focus', function(){
     document.body.style.backgroundColor = 'lightblue';
+})
+
+//apply 'blur' event using addEventListener in input field
+document.getElementById('input-field').addEventListener('blur', function(){
+    document.body.style.backgroundColor = 'white';
 })
