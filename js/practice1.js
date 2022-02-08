@@ -20,7 +20,9 @@ redButton.onclick =  function (){
 // way 5: to add click event handler using addEventListener using function and id selector
 
 const greenButton = document.getElementById('make-green');
-greenButton.addEventListener('click', function(){
+greenButton.addEventListener('click', makeGreen);
+function makeGreen(){
     document.body.style.backgroundColor = 'green';
-})
+}
+    
 
