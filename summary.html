@@ -7,6 +7,7 @@
     <title>Event summary</title>
 </head>
 <body>
+    <h1 id="mouse-header">More Mouse event</h1>
     <input id="email-field" type="text" placeholder="email address">
     <button onclick="handleClick()">click me: Green</button>
 
@@ -17,6 +18,18 @@
 
         document.getElementById('email-field').addEventListener('keyup', function(event){
             console.log(event.target.value)
+        })
+
+        // document.getElementById('mouse-header').addEventListener('mousemove', function(){
+        //     console.log('Mouse is moving');
+        // })
+
+        // document.getElementById('mouse-header').addEventListener('mouseenter', function(){
+        //     console.log('Mouse is entering');
+        // })
+
+        document.getElementById('mouse-header').addEventListener('mouseout', function(){
+            console.log('Mouse out');
         })
     </script>
 </body>
