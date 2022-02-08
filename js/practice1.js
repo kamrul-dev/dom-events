@@ -57,7 +57,13 @@ document.getElementById('input-field').addEventListener('blur', function(){
 })
 
 //apply 'keydown' event using addEventListener in input field
-document.getElementById('input-field').addEventListener('keydown', function(){
+/* document.getElementById('input-field').addEventListener('keydown', function(){
+    const inputField = document.getElementById('input-field');
+    console.log(inputField.value);
+}) */
+
+//apply 'keypress' event using addEventListener in input field
+document.getElementById('input-field').addEventListener('keypress', function(){
     const inputField = document.getElementById('input-field');
     console.log(inputField.value);
 })
