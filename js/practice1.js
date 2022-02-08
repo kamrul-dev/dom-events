@@ -74,6 +74,10 @@ document.getElementById('input-field').addEventListener('blur', function () {
     console.log(inputField.value);
 }) */
 
+
+
+
+
 // If you write 'delete' word in iput field then the delete button will be enable and we delete the content.
 document.getElementById('input-field').addEventListener('keyup', function (event) {
     const deleteButton = document.getElementById('delete-btn');
@@ -83,4 +87,11 @@ document.getElementById('input-field').addEventListener('keyup', function (event
     else{
         deleteButton.setAttribute('disabled', true);
     }
+})
+
+   // apply 'change' event using addEventListener in input field
+   document.getElementById('input-field').addEventListener('change', function () {
+    const deleteField = document.getElementById('input-field');
+    console.log(deleteField.value);
+
 })
