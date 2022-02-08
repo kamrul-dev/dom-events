@@ -12,7 +12,14 @@ function makeIndioColor(){
 
 // way 4: to add onclick event handler using anonymous function and id selector
 
-const RedButton = document.getElementById('make-red');
-RedButton.onclick =  function (){
+const redButton = document.getElementById('make-red');
+redButton.onclick =  function (){
     document.body.style.backgroundColor = 'red';
 }
+
+// way 5: to add click event handler using addEventListener using function and id selectior
+
+const greenButton = document.getElementById('make-green');
+greenButton.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'green';
+})
