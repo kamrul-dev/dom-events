@@ -9,3 +9,10 @@ Indigobutton.onclick = makeIndioColor;
 function makeIndioColor(){
     document.body.style.backgroundColor = 'indigo';
 }
+
+// way 4: to add onclick event handler using anonymous function and id selector
+
+const RedButton = document.getElementById('make-red');
+RedButton.onclick =  function (){
+    document.body.style.backgroundColor = 'red';
+}
