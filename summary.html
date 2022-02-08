@@ -7,12 +7,17 @@
     <title>Event summary</title>
 </head>
 <body>
+    <input id="email-field" type="text" placeholder="email address">
     <button onclick="handleClick()">click me: Green</button>
 
     <script>
         function handleClick(){
             document.body.style.backgroundColor = 'green';
         }
+
+        document.getElementById('email-field').addEventListener('keyup', function(event){
+            console.log(event.target.value)
+        })
     </script>
 </body>
 </html>
