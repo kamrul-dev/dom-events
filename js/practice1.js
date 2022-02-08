@@ -31,3 +31,9 @@ const yellowButton = document.getElementById('make-yellow');
 yellowButton.addEventListener('click', function(){
     document.body.style.backgroundColor = 'yellow';
 })
+
+// way 7: to add click event handler using addEventListener using function and id selector , (direct short way and it will be used most of the cases)
+
+document.getElementById('make-orange').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'orange';
+})
