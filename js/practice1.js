@@ -37,3 +37,11 @@ yellowButton.addEventListener('click', function(){
 document.getElementById('make-orange').addEventListener('click', function(){
     document.body.style.backgroundColor = 'orange';
 })
+
+//=========================More Event Practice=====================================================
+
+// delete secret info after clicking the delete button
+
+document.getElementById('delete-btn').addEventListener('click', function(){
+    document.getElementById('secret-info').style.display = 'none';
+})
