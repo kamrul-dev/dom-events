@@ -133,3 +133,8 @@ function justFunction(){
    justFunc.innerText = 'by just function';
 };
 
+// dircet event by addEventListener
+document.getElementById('direct-add').addEventListener('click', function(){
+    const addEventDirect = document.getElementById('add-para');
+    addEventDirect.innerText = 'set by direct add event';
+});
