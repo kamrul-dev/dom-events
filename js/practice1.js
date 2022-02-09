@@ -81,17 +81,43 @@ document.getElementById('input-field').addEventListener('blur', function () {
 // If you write 'delete' word in iput field then the delete button will be enable and we delete the content.
 document.getElementById('input-field').addEventListener('keyup', function (event) {
     const deleteButton = document.getElementById('delete-btn');
-    if(event.target.value == 'delete'){
+    if (event.target.value == 'delete') {
         deleteButton.removeAttribute('disabled');
     }
-    else{
+    else {
         deleteButton.setAttribute('disabled', true);
     }
 })
 
-   // apply 'change' event using addEventListener in input field
-   document.getElementById('input-field').addEventListener('change', function () {
+// apply 'change' event using addEventListener in input field
+document.getElementById('input-field').addEventListener('change', function () {
     const deleteField = document.getElementById('input-field');
     console.log(deleteField.value);
 
 })
+
+// ===========================Event Bubble===============================================
+
+// click second li
+document.getElementById('second-li').addEventListener('click', function(){
+    console.log('second li clicked');
+});
+document.getElementById('second-li').addEventListener('click', function(){
+    console.log('second 1 li clicked');
+});
+document.getElementById('second-li').addEventListener('click', function(){
+    console.log('second 2 li clicked');
+});
+document.getElementById('second-li').addEventListener('click', function(){
+    console.log('second 3 li clicked');
+});
+
+// click ul
+document.getElementById('ul-click').addEventListener('click', function(){
+    console.log('ul clicked');
+});
+
+// section click
+document.getElementById('section-click').addEventListener('click', function(){
+    console.log('section clicked');
+});
