@@ -101,7 +101,8 @@ document.getElementById('input-field').addEventListener('change', function () {
 // click second li
 document.getElementById('second-li').addEventListener('click', function(event){
     console.log('second li clicked');
-    event.stopPropagation();
+    // event.stopPropagation();
+    event.stopImmediatePropagation();
 });
 document.getElementById('second-li').addEventListener('click', function(){
     console.log('second 1 li clicked');
