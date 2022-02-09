@@ -99,8 +99,9 @@ document.getElementById('input-field').addEventListener('change', function () {
 // ===========================Event Bubble===============================================
 
 // click second li
-document.getElementById('second-li').addEventListener('click', function(){
+document.getElementById('second-li').addEventListener('click', function(event){
     console.log('second li clicked');
+    event.stopPropagation();
 });
 document.getElementById('second-li').addEventListener('click', function(){
     console.log('second 1 li clicked');
