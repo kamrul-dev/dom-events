@@ -123,3 +123,13 @@ document.getElementById('ul-click').addEventListener('click', function(){
 document.getElementById('section-click').addEventListener('click', function(){
     console.log('section clicked');
 });
+
+
+//==========================Most Common Way To Handle the Event==============================
+
+//just function
+function justFunction(){
+   const justFunc = document.getElementById('add-para');
+   justFunc.innerText = 'by just function';
+};
+
