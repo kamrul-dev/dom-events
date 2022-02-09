@@ -138,3 +138,15 @@ document.getElementById('direct-add').addEventListener('click', function(){
     const addEventDirect = document.getElementById('add-para');
     addEventDirect.innerText = 'set by direct add event';
 });
+
+// data show from input field
+document.getElementById('upadate-btn').addEventListener('click', function(event){
+    
+    // catch input value
+    const inputData = document.getElementById('input-data');
+
+    // show input value in p tag
+    const inputShow = document.getElementById('add-para');
+    inputShow.innerText = inputData.value;
+    inputData.value = '';   
+});
