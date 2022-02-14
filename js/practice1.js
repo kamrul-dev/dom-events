@@ -99,28 +99,28 @@ document.getElementById('input-field').addEventListener('change', function () {
 // ===========================Event Bubble===============================================
 
 // click second li
-document.getElementById('second-li').addEventListener('click', function(event){
+document.getElementById('second-li').addEventListener('click', function (event) {
     console.log('second li clicked');
     // event.stopPropagation();
     event.stopImmediatePropagation();
 });
-document.getElementById('second-li').addEventListener('click', function(){
+document.getElementById('second-li').addEventListener('click', function () {
     console.log('second 1 li clicked');
 });
-document.getElementById('second-li').addEventListener('click', function(){
+document.getElementById('second-li').addEventListener('click', function () {
     console.log('second 2 li clicked');
 });
-document.getElementById('second-li').addEventListener('click', function(){
+document.getElementById('second-li').addEventListener('click', function () {
     console.log('second 3 li clicked');
 });
 
 // click ul
-document.getElementById('ul-click').addEventListener('click', function(){
+document.getElementById('ul-click').addEventListener('click', function () {
     console.log('ul clicked');
 });
 
 // section click
-document.getElementById('section-click').addEventListener('click', function(){
+document.getElementById('section-click').addEventListener('click', function () {
     console.log('section clicked');
 });
 
@@ -128,36 +128,54 @@ document.getElementById('section-click').addEventListener('click', function(){
 //==========================Most Common Way To Handle the Event==============================
 
 //just function
-function justFunction(){
-   const justFunc = document.getElementById('add-para');
-   justFunc.innerText = 'by just function';
+function justFunction() {
+    const justFunc = document.getElementById('add-para');
+    justFunc.innerText = 'by just function';
 };
 
 // dircet event by addEventListener
-document.getElementById('direct-add').addEventListener('click', function(){
+document.getElementById('direct-add').addEventListener('click', function () {
     const addEventDirect = document.getElementById('add-para');
     addEventDirect.innerText = 'set by direct add event';
 });
 
 // data show from input field
-document.getElementById('upadate-btn').addEventListener('click', function(event){
-    
+document.getElementById('upadate-btn').addEventListener('click', function (event) {
+
     // catch input value
     const inputData = document.getElementById('input-data');
 
     // show input value in p tag
     const inputShow = document.getElementById('add-para');
     inputShow.innerText = inputData.value;
-    inputData.value = '';   
+    inputData.value = '';
 });
 
 // create list using DOM
-document.getElementById('list-btn').addEventListener('click', function(){
+document.getElementById('list-btn').addEventListener('click', function () {
     const ulItem = document.getElementById('list-item');
-     const ul = document.createElement('ul');
-     const li = document.createElement('li');
-     
-     li.innerText = 'list item';
-     ulItem.appendChild(li);
+    const ul = document.createElement('ul');
+    const li = document.createElement('li');
+
+    li.innerText = 'list item';
+    ulItem.appendChild(li);
 
 });
+
+
+// create a input field and set default value 0. then increase by 1. when input field increased till the 5 value then the button will be disabled.
+
+const getInput = document.getElementById('increase-value').setAttribute('value', '0');
+let count = 0;
+function increaseNumber() {
+    count = count + 1;
+    if (count == 5) {
+        const buttonElement = document.getElementById('add-disabled');
+        buttonElement.setAttribute('disabled', true);
+    }
+    const getInput = document.getElementById('increase-value');
+    const getValue = getInput.value;
+    getInput.value = count;
+}
+
+
