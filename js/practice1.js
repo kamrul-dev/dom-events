@@ -150,3 +150,14 @@ document.getElementById('upadate-btn').addEventListener('click', function(event)
     inputShow.innerText = inputData.value;
     inputData.value = '';   
 });
+
+// create list using DOM
+document.getElementById('list-btn').addEventListener('click', function(){
+    const ulItem = document.getElementById('list-item');
+     const ul = document.createElement('ul');
+     const li = document.createElement('li');
+     
+     li.innerText = 'list item';
+     ulItem.appendChild(li);
+
+});
